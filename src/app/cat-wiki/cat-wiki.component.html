@@ -1,0 +1,94 @@
+<header id="header">
+
+	<h1 id="title">Cat<span>Wiki</span></h1>
+
+	<h3 id="sub_title" >Everything you need to know about <br>
+		your cat</h3>
+
+	<select name="Cat List" id="search" (change)="searchedCat()">
+		<option *ngFor='let breed of cats_id' value="{{ breed.id }}" > {{ breed.name }} </option>
+	</select>
+
+</header>
+
+<article *ngIf="searched_cat" id="searched_cat">
+
+		<img title="{{ searched_cat[0].breeds[0].name }}" id="cat_img" width="500" src="{{ searched_cat[0].url }}">
+
+		<h2 id="name">{{ searched_cat[0].breeds[0].name }}</h2>
+
+		<div id="searched_cat_info">
+
+			<p><strong>Origin </strong>{{ searched_cat[0].breeds[0].origin }}</p>
+
+			<p><strong>Temperament </strong>{{ searched_cat[0].breeds[0].temperament }}</p>
+
+			<p><strong>Description </strong>{{ searched_cat[0].breeds[0].description }}</p>
+
+			<div id="number_info">
+
+				<p><strong>Dog Friendly </strong><span>{{ searched_cat[0].breeds[0].dog_friendly }}0 %</span></p>
+
+				<p><strong>Adapatability </strong><span>{{ searched_cat[0].breeds[0].adaptability }}0 %</span></p>
+
+				<p><strong>Affection Level </strong><span>{{ searched_cat[0].breeds[0].affection_level }}0 %</span></p>
+
+				<p><strong>Child Friendly </strong><span>{{ searched_cat[0].breeds[0].child_friendly }}0 %</span></p>
+
+				<p><strong>Grooming </strong><span>{{ searched_cat[0].breeds[0].grooming }}0 %</span></p>
+
+				<p><strong>Intelligence </strong><span>{{ searched_cat[0].breeds[0].intelligence }}0 %</span></p>
+
+				<p><strong>Social Needs </strong><span>{{ searched_cat[0].breeds[0].social_needs }}0 %</span></p>
+
+				<p><strong>Stranger Friendly </strong><span>{{ searched_cat[0].breeds[0].stranger_friendly }}0 %</span></p>
+
+			</div>
+
+		<div id="other_pictures">
+			<img *ngFor="let cat of searched_cat_imgs" title="{{ searched_cat[0].breeds[0].name }}" width="400"height="auto" src="{{ cat }}">
+		</div>
+
+	</div>
+
+</article>
+
+<article id="cats_to_discover">
+
+		<h1 id="title">CATS TO BE DISCOVERED, <span (click)="randomCatsTry()" >TRY ME!!</span></h1>
+
+		<ul *ngIf="random_cats" id="random_cat_list">
+			<li *ngFor="let random of random_cats">
+				<img height="300" [src]="random.image.url">
+				<h2>{{ random.name }}</h2>
+				<p>{{ random.description }} <br><br>
+				<strong>Temperament: </strong>{{ random.temperament }} <br>
+				<strong>Dog Friendly: </strong>{{ random.dog_friendly }} <br>
+				<strong>Child Friendly: </strong>{{ random.child_friendly }} <br>
+				<strong>Intelligence: </strong>{{ random.intelligence }}</p>
+				
+			</li>
+				
+		</ul>
+
+</article>
+
+<article id="suggestions">
+
+		<h2 id="title">Why you should have a cat (or more than one).</h2> <br>
+
+		<p>Here you can find some interesting articles which could help you to take care of a lovely cat if you are in doubt, my suggestion, don`t be, cats are wonderfull.</p>
+
+		<ul id="articles">
+			<li class="article"><a target="blank" href="https://www.mentalfloss.com/article/51154/10-scientific-benefits-being-cat-owner">10 Scientific Benefits of Being a Cat Owner</a></li>
+
+			<li class="article"><a target="blank" href="https://www.goodnet.org/articles/7-scientifically-proven-health-benefits-being-cat-owner">7 Scientifically Proven Health Benefits Of Being a Cat Owner</a></li>
+
+			<li class="article"><a target="blank" href="https://www.healthline.com/health/benefits-of-being-cat-lover">The Science-Backed Benefits of Being a Cat Lover</a></li>
+		</ul>
+
+</article>
+
+<footer id="footer">
+	Some searched_cat about the api and me
+</footer>

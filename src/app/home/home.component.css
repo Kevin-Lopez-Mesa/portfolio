@@ -1,0 +1,193 @@
+#about-me {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 5px 10px 5px 15px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgb(0 0 0 / 0.2);
+}
+
+#about-me strong {
+    color: rgb(255, 189, 89);
+}
+
+#about-me i {
+    color: rgb(255, 189, 89);
+}
+
+#skills {
+    width: 600px;
+    margin: 90px 20px 40px 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    
+}
+
+.skills {
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.skill {
+    color: white;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #c9e5ffb3;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background-color: #90fa5f;
+}
+
+.html {
+    width: 70%;
+    animation: html 2s;
+}
+
+.css {
+    width: 60%;
+    animation: css 2s;
+}
+
+.javaScript {
+    width: 75%;
+    animation: javaScript 2s;
+}
+
+.angular {
+    width: 70%;
+    animation: angular 2s;
+}
+
+.node {
+    width: 40%;
+    animation: node 2s;
+}
+
+.mongo {
+    width: 30%;
+    animation: mongo 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes javaScript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+@keyframes mongo {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+ 
+#experience {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 15px;
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgb(0 0 0 / 0.2);
+    width: 900px;
+    position: relative;
+    left: 781px;
+    bottom: 450px;
+}
+
+#experience h1 {
+    color: rgb(255, 189, 89);
+}
+
+#experience strong {
+    color: rgb(255, 189, 89);
+}
+
+#projects {
+    position: relative;
+    bottom: 300px;
+}
+
+#hobbies {
+    background-color: cornflowerblue;
+    width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    text-align: center;
+
+    position: relative;
+    bottom: 950px;
+    left: 800px;
+}
+
+#hobbies strong {
+    color: rgb(255, 189, 89);
+}
+
+#hobbies h2 {
+    color: rgb(255, 189, 89);
+    font-size: 35px;
+}    
+
+#hobbies p {
+    color: white;
+    font-size: 20px;
+}
+
+#hobbies img {
+    border-radius: 10px;
+    border: 2px solid rgb(255, 189, 89);
+}

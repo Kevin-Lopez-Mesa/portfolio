@@ -1,0 +1,14 @@
+.slider {
+    background-color: rgb(236, 24, 24);
+    box-shadow: 0 3px 10px rgba(202, 38, 38, 0.2);
+}
+
+.project {
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    background-color: turquoise;
+}
+

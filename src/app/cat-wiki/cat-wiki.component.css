@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/is_my_cat_normal_slideshow/1800x1200_is_my_cat_normal_slideshow.jpg');
+	height: 400px;
+	background-color: #F6C1EA;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+#header #title {
+	position: absolute;
+	color: #D63DC3;
+	top: -20px;
+	left: 120px;
+	font-size: 160px;
+}
+
+#header #title span {
+	color: #B1E30F;
+}
+
+#header #sub_title {
+	position: absolute;
+	color: white;
+	top: 160px;
+	left: 120px;
+	font-size: 50px;
+}
+
+#search  {
+	font-size: 15px;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 10px;
+	color: #A80083;
+	top: 320px;
+	left: 400px;
+}
+
+#searched_cat {
+	font-family: 'Otomanopee One', sans-serif;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #FFEEFA;
+	border-radius: 15px;
+}
+
+#searched_cat #cat_img {
+	box-shadow: 2px 6px 21px -3px rgba(5,5,5,0.86);
+	float: left;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 50px;
+	margin-bottom: 40px;
+
+}
+
+#searched_cat #cat_img:hover {	
+	box-shadow: 4px 12px 30px -5px rgba(5,5,5,0.86);
+	transition: box_shadow .9s;
+}
+
+#searched_cat #name {
+	background-color: white;
+	color: #B1E30F;
+	font-size: 100px;
+	margin-top: 40;	
+}
+
+#searched_cat #searched_cat_info {
+ margin-left: 20px;
+}
+
+#searched_cat #searched_cat_info p strong {
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-right: 15px;
+	background-color: white;
+	font-size: 25px;
+	color: #B1E30F;
+}
+
+#searched_cat #searched_cat_info p {
+	font-size: 28px;
+}
+
+#searched_cat #searched_cat_info span {
+	font-size: 28px;
+}
+
+#searched_cat #searched_cat_info #number_info {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+#searched_cat #searched_cat_info #other_pictures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+#searched_cat #searched_cat_info #other_pictures img {
+	box-shadow: 2px 6px 21px -3px rgba(5,5,5,0.86);
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+#searched_cat #searched_cat_info #other_pictures img:hover {	
+	box-shadow: 4px 12px 30px -5px rgba(5,5,5,0.86);
+	transition: box_shadow .9s;
+}
+
+#cats_to_discover {
+	font-family: 'Otomanopee One', sans-serif;
+}
+
+#cats_to_discover #title {
+	background-image: url('https://ih1.redbubble.net/image.687086913.9448/flat,128x,075,f-pad,128x128,f8f8f8.jpg');
+	background-position: center;
+	padding: 20px;
+	color: #D63DC3;
+	text-align: center;
+	font-size: 50px;
+}
+
+#cats_to_discover #title span {
+	color: #B1E30F;
+	text-align: center;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+#cats_to_discover #random_cat_list {
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+#cats_to_discover #random_cat_list li {
+	margin-bottom: 50px;
+}
+
+#cats_to_discover #random_cat_list img {
+	box-shadow: 2px 6px 21px -3px rgba(5,5,5,0.86);
+	border-radius: 10px;
+	float: left;
+	margin: 20px;
+}
+
+#cats_to_discover #random_cat_list h2 {
+	font-size: 35px;
+	color: #B1E30F;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+#cats_to_discover #random_cat_list p {
+	font-size: 20px;
+	background-color: #FCE5F5;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+}
+
+#suggestions {
+	font-family: 'Otomanopee One', sans-serif;
+	background-color: #C3EE4F;
+	border-radius: 10px;
+	padding: 10px 0 10px 0;
+}
+
+#suggestions #title {
+	background-image: url("https://i.pinimg.com/originals/88/b2/b6/88b2b6031a0d38501416562140a4917e.png");
+	color: white;
+	font-size: 45px;
+	margin-left: 60px;
+	padding-bottom: 20px;
+    margin-block-end: 0;  
+    margin-block-start: 0.20em;
+}
+
+#suggestions #title img {
+	margin-left: 30px;
+}
+
+#suggestions p {
+	color: #D63DC3;
+	font-size: 25px;
+	margin-left: 20px;
+	margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+#suggestions #articles li {
+	background-color: white;
+	border-radius: 10px;
+	margin: 15px;
+}
+
+#suggestions #articles li a {
+	padding-left: 10px;
+	font-size: 35px;
+	color: #A9E20A;
+}
+
+#suggestions #articles li a:hover {
+	color: #B81085;
+	transition: color .8s;
+}

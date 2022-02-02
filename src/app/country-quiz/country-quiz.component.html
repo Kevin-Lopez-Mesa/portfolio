@@ -1,0 +1,56 @@
+
+<div id="game">
+
+	<div id="start">
+
+		<header id="name"><h1><span>Country</span> Quiz !</h1></header>
+
+		<button id="start_btn" (click)="start_quiz()" >START</button>
+
+	</div>
+
+	<div id="quiz">
+
+		<div id="question">
+
+			<img id="question_img" src="https://i.pinimg.com/564x/68/02/a3/6802a367a6e08581022f4d704698ae20.jpg">
+
+			<h2>The capital of <strong><i> {{ country.name }} </i></strong> is</h2>
+
+		</div>
+
+		<div id="answers">
+
+			<button id="answer1" (click)="optionSelected(this.buttons[0])"> <span>{{ answers[0] }}</span> </button><br>
+
+			<button id="answer2" (click)="optionSelected(this.buttons[1])" > <span>{{ answers[1] }}</span> </button><br>
+
+			<button id="answer3" (click)="optionSelected(this.buttons[2])" > <span>{{ answers[2] }}</span> </button><br>
+
+			<button id="answer4" (click)="optionSelected(this.buttons[3])" > <span>{{ answers[3] }}</span> </button><br>
+
+			<button id="answer5" (click)="optionSelected(this.buttons[4])" > <span>{{ answers[4] }}</span> </button><br>
+
+		</div>
+
+		<div id="timer">
+			<p></p>
+		</div>
+
+		<button id="next" (click)='nextQuest()'>NEXT</button>
+
+	</div>
+
+	<div id="result">
+
+		<img id="result_img" src="https://image.freepik.com/free-vector/happy-people-jumping-celebrating-victory-flat-cartoon-characters-illustration_227564-30.jpg">
+		<p>Results</p><br>
+		<h3>You got <span> {{ points }} </span> correct answers</h3><br>
+
+		<button id="try_again" (click)='restart()' >Try Again</button>
+
+
+	</div>
+
+</div>
+
